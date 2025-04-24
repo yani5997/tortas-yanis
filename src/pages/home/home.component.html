@@ -1,0 +1,54 @@
+<h1 class="text-center">¡Cada torta es única como tú!</h1>
+<h4 class="text-center italic">
+  Por eso en Tortas Yani personalizamos tu pedido
+</h4>
+<div class="col-md-6 mx-auto">
+  <p class="text-center italic">
+    ¿Estás próxima a casarte, celebrar un bautizo o tener una fiesta temática?
+    Cuéntanos cómo imaginas tu celebración soñada y nosotras hacemos la torta
+    adecuada.
+  </p>
+</div>
+<div class="d-flex flex-horizontal">
+  <div class="alert alert-warning col-md-2 ms-0.5">
+    <h5 class="text-center">Categoria Producto</h5>
+    <div id="sidebar" class="sidebar hidden">
+      <div class="nav flex-column nav-pills" aria-orientation="vertical">
+        <a class="nav-link" href="#">Torta Especiales</a>
+        <a class="nav-link" href="#">Torta Quinceañeros</a>
+        <a class="nav-link" href="#">Torta Matrimonio</a>
+        <a class="nav-link" href="#">Vocaditos</a>
+        <a class="nav-link" href="#">Torta Cumpleaños</a>
+        <a class="nav-link" href="#">Torta Festivos</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="row justify-content-between col-md-10 ms-1">
+    <div class="w-100 col p-4">
+      <widget-tarjeta [producto]="myproducto"></widget-tarjeta>
+    </div>
+    <div class="w-100 col p-4">
+      <widget-tarjeta [producto]="segundoprod"></widget-tarjeta>
+    </div>
+    <div class="w-100 col p-4">
+      <widget-tarjeta [producto]="tercerprod"></widget-tarjeta>
+    </div>
+    <div class="w-100 col p-4">
+      <widget-tarjeta [producto]="cuartoprod"></widget-tarjeta>
+    </div>
+
+    <div class="row justify-content-between col-md-10 ms-1">
+      <div class="w-100 col p-4" *ngFor="let prod of productos">
+        <widget-tarjeta [producto]="prod"></widget-tarjeta>
+      </div>
+    </div>
+  </div>
+
+
+</div>
+
+
+
+
+

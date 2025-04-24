@@ -1,0 +1,29 @@
+<section>
+  <h1 class="text-center">Lista de productos</h1>
+  <div>
+    <table class="table table-hovered table-striped">
+      <thead>
+        <tr>
+          <td>ID</td>
+          <td>Nombres</td>
+          <td>Descripcion</td>
+          <td>Precio</td>
+          <td>Imagen</td>
+        </tr>
+      </thead>
+      <tbody>
+
+        <tr *ngFor="let producto of productos">
+          <td>{{producto.id}}</td>
+          <td>{{producto.nombre}}</td>
+          <td>{{producto.descripcion}}</td>
+          <td>{{producto.precio}}</td>
+          <td>{{producto.imagen}}</td>
+          <td>
+            <button type="button" class="btn btn-primary btn-sm">seleccionar</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>

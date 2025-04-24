@@ -1,0 +1,22 @@
+<h1 class="text-center">¿Quiénes somos?</h1>
+<div class="text-center">
+  <img src="/logotienda.png" width="150" height="150">
+<p class="text-center italic">
+      Tortas Yani es un lugar donde la imaginación, los sabores y la inspiración
+      se fusionan para crear las tortas más espectaculares.</p>
+      <p class="text-center italic">
+        En Tortas Yani encontrarás la torta de tus sueños, workshops innovadores
+        orientados a pasteleros de diferentes niveles, recetas exclusivas, tips
+        de pastelería y de más contenido relacionado al mundo del arte en azúcar y pastelería.</p>
+</div>
+
+<div>
+  <c-carousel (itemChange)="onItemChange($event)" [interval]="5000" transition="slide">
+    <c-carousel-inner>
+      <c-carousel-item *ngFor="let slide of slides">
+        <img [src]="slide.src" alt="{{slide.title}}" class="d-block w-100" loading="lazy" width="250" height="350"/>
+      </c-carousel-item>
+    </c-carousel-inner>
+  </c-carousel>
+</div>
+
