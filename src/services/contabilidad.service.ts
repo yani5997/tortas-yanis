@@ -6,7 +6,7 @@ import { Observable } from "rxjs/internal/Observable";
   providedIn: 'root'
 })
 export class ContabilidadService {
-  private apiUrl = "http://localhost:3000/contabilidad/pagar";
+  private apiUrl = "http://localhost:5000/contabilidad/pagar";
 
   constructor(private httpClient: HttpClient){
 

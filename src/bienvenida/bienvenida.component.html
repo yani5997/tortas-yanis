@@ -1,0 +1,32 @@
+<!-- PORTADA DE BIENVENIDA -->
+<section class="hero-section text-white d-flex align-items-center justify-content-center"
+         style="background-image: url('/portada-tortas.jpg'); height: 100vh; background-size: cover; background-position: center;">
+
+  <div class="text-center bg-dark bg-opacity-50 p-5 rounded shadow">
+    <h1 class="display-4 fw-bold">Bienvenidos a <span class="text-success">TortasYani</span></h1>
+    <p class="lead">Las mejores tortas para tus celebraciones</p>
+    <button class="btn btn-success btn-lg mt-3" (click)="verProductos()">Ver Productos</button>
+  </div>
+
+
+</section>
+
+
+<section id="productos" class="productos-section bg-dark text-white py-5">
+  <div class="container">
+    <h2 class="text-center mb-4">Nuestros Productos</h2>
+    <p class="text-center mb-5">Elige entre una variedad de tortas decoradas y personalizadas.</p>
+
+    <div class="row justify-content-center">
+      <div class="card m-3" style="width: 18rem;" *ngFor="let prod of productos">
+        <div class="imagen-con-texto">
+          <img [src]="prod.imagen" class="card-img-top" alt="{{ prod.nombre }}">
+          <div class="texto-imagen">
+            {{ prod.nombre }}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+

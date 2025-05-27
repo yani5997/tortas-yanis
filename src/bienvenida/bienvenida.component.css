@@ -1,0 +1,27 @@
+z.hero-section {
+    transition: background 0.5s ease-in-out;
+  }
+  .productos-section {
+    background-color: #000; /* Fondo negro */
+  }
+  
+  .imagen-con-texto {
+    position: relative;
+  }
+  
+  .imagen-con-texto img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+  }
+  
+  .texto-imagen {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: rgba(0,0,0,0.6);
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-size: 1.1rem;
+  }

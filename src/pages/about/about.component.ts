@@ -18,13 +18,16 @@ import { RouterLink } from "@angular/router";
 
 export class AboutComponent implements OnInit{
   //logica de negocio
-  slides: any[] = new Array(3).fill({id: -1, src: '', title: '', subtitle: ''});
+  slides: any[] = new Array(4).fill({id: -1, src: '', title: '', subtitle: ''});
   ngOnInit(): void {
     this.slides[0] = {
       src: '/torta-vainilla.jpg'
     };
     this.slides[1] = {
       src: '/torta-leche.jpg'
+    };
+    this.slides[2] = {
+      src: '/torta.png'
     };
     this.slides[2] = {
       src: '/torta.png'

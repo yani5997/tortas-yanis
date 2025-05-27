@@ -6,7 +6,7 @@ import { Observable } from "rxjs";
   providedIn: 'root'
 })
 export class UsuarioService {
-  private apiUrl = "http://localhost:3000/generate_token";
+  private apiUrl = "http://localhost:5000/generate_token";
 
   constructor(private httpClient: HttpClient){
 

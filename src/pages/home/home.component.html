@@ -9,17 +9,26 @@
     adecuada.
   </p>
 </div>
+
 <div class="d-flex flex-horizontal">
-  <div class="alert alert-warning col-md-2 ms-0.5">
-    <h5 class="text-center">Categoria Producto</h5>
+  <div class="card p-3 bg-light shadow-sm col-md-2">
+    <h5 class="text-center text-primary">Categorías</h5>
+    <ul class="nav flex-column nav-pills">
+      <li class="nav-item" href="/app-tortasespeciales"><a class="nav-link" (click)="filtrarPorCategoria('Especiales')">🎂 Torta Especiales</a></li>
+      <li class="nav-item" href="/app-tortasespeciales"><a class="nav-link" (click)="filtrarPorCategoria('Quinceañeros')">👸 Quinceañeros</a></li>
+      <li class="nav-item" href="/app-tortasespeciales"><a class="nav-link" (click)="filtrarPorCategoria('Matrimonio')">💍 Matrimonio</a></li>
+      <li class="nav-item" href="/app-tortasespeciales"><a class="nav-link" (click)="filtrarPorCategoria('Vocaditos')">🍬 Vocaditos</a></li>
+      <li class="nav-item" href="/app-tortasespeciales"><a class="nav-link" (click)="filtrarPorCategoria('Cumpleaños')">🎉 Cumpleaños</a></li>
+      <li class="nav-item" href="/app-tortasespeciales"><a class="nav-link" (click)="filtrarPorCategoria('Festivos')">🎊 Festivos</a></li>
+    </ul>
     <div id="sidebar" class="sidebar hidden">
       <div class="nav flex-column nav-pills" aria-orientation="vertical">
-        <a class="nav-link" href="#">Torta Especiales</a>
-        <a class="nav-link" href="#">Torta Quinceañeros</a>
-        <a class="nav-link" href="#">Torta Matrimonio</a>
-        <a class="nav-link" href="#">Vocaditos</a>
-        <a class="nav-link" href="#">Torta Cumpleaños</a>
-        <a class="nav-link" href="#">Torta Festivos</a>
+        <a class="nav-link" href="/app-tortasespeciales">Torta Especiales</a>
+        <a class="nav-link" href="/app-tortasquinceañeros">Torta Quinceañeros</a>
+        <a class="nav-link" href="/app-tortasmatrimonio">Torta Matrimonio</a>
+        <a class="nav-link" href="/app-tortasvocadito">Vocaditos</a>
+        <a class="nav-link" href="/app-tortascumpleañero">Torta Cumpleaños</a>
+        <a class="nav-link" href="/app-tortasfestivos">Torta Festivos</a>
       </div>
     </div>
   </div>
@@ -37,18 +46,28 @@
     <div class="w-100 col p-4">
       <widget-tarjeta [producto]="cuartoprod"></widget-tarjeta>
     </div>
-
+    <div class="w-100 col p-4">
+      <widget-tarjeta [producto]="quintoprod"></widget-tarjeta>
+    </div>
+    <div class="w-100 col p-4">
+      <widget-tarjeta [producto]="sextoprod"></widget-tarjeta>
+    </div>
     <div class="row justify-content-between col-md-10 ms-1">
       <div class="w-100 col p-4" *ngFor="let prod of productos">
         <widget-tarjeta [producto]="prod"></widget-tarjeta>
       </div>
     </div>
   </div>
-
-
 </div>
 
+<!-- 🔥 Aquí agregamos los componentes importados para evitar warnings y mostrar contenido adicional -->
 
+<hr>
+<h2 class="text-center text-success">Área de Pago</h2>
+<widget-pagar></widget-pagar>
 
+<hr>
+<h2 class="text-center text-success">Lista de Productos</h2>
+<app-lista-productos></app-lista-productos>
 
 

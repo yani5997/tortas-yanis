@@ -36,5 +36,13 @@ export class ListaProductosComponent{
       'descripcion': 'Torta grande para dusfrutar en familia',
       'precio': 50
     }));
+    this.productos.push(new ProductoModel({
+      'id': 125,
+      'nombre': 'Chisket de Maracuya',
+      'descripcion': 'Torta grande para dusfrutar en familia',
+      'precio': 50
+    }));
+
+
   }
 }
